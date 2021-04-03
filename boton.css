@@ -1,0 +1,1252 @@
+
+
+/************************************************************************
+                   CONTENEDOR DE ENTRADAS Y SALIDAS
+************************************************************************/
+
+#out{
+
+    height: 10%;
+    padding: 65px;
+    margin-top: 150px;
+    background-color: lightblue;
+    
+  }
+
+  #bCh1, #bCh2, #bCh3, #bCh4, #bCh5, #bCh6, #bCh7, #bCh8, #bCh9, #bCh10,#bCh11, #bCh12, #bCh13, #bCh14, #bCh15, #bCh16{
+
+    width: 100%;
+    padding:65px ;/*50*/
+    position: relative;
+    background-color: lightblue;
+   
+  }
+
+
+/************************************************************************
+                        EFECTOS Y POSICIÓN DEL BOTON
+************************************************************************/
+*, *:before, *:after {
+    margin: auto;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+ .Salidas, label, label:before, label:after {
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+label {
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 20%;
+    transition: all .2s ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1.6s;
+    animation-name: dot-anim;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background: rgb(8, 240, 39);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0 0 .8vw 0, rgba(0, 0, 0, 0.239216) 0 .8vw .8vw 0;
+    transition: all .2s;
+}
+
+label:after {
+    content: "";
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+/************************************************************************
+                         ETIQUETA DE CANAL
+************************************************************************/
+.ch1{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch2{
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch3{
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch4{
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch5{
+    position: absolute;
+    top: 15%;
+    left: 29%;
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch6{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch7{
+    position: absolute;
+    top: 15%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch8{
+    position: absolute;
+    top: 15%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch9{
+    position: absolute;
+    top: 15%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch10{
+    position: absolute;
+    top: 15%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch11{
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch12{
+    position: absolute;
+    top: 15%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch13{
+    position: absolute;
+    top: 15%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch14{
+    position: absolute;
+    top: 15%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch15{
+    position: absolute;
+    top: 15%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+.ch16{
+    position: absolute;
+    top: 15%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px; 
+}
+/************************************************************************
+                            BOTONES
+************************************************************************/
+#radio-1 + label,
+#radio-17 + label,
+#radio-33 + label,
+#radio-49 + label,
+#radio-65 + label,
+#radio-81 + label,
+#radio-97 + label,
+#radio-113 + label,
+#radio-129 + label,
+#radio-145 + label,
+#radio-161 + label,
+#radio-177 + label,
+#radio-193 + label,
+#radio-209 + label,
+#radio-225 + label,
+#radio-241 + label,
+#radio-257 + label {
+    left: -90vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-1 + label:before, 
+#radio-17 + label:before,
+#radio-33 + label:before,
+#radio-49 + label:before,
+#radio-65 + label:before,
+#radio-81 + label:before,
+#radio-97 + label:before,
+#radio-113 + label:before,
+#radio-129 + label:before,
+#radio-145 + label:before,
+#radio-161 + label:before,
+#radio-177 + label:before,
+#radio-193 + label:before,
+#radio-209 + label:before,
+#radio-225 + label:before,
+#radio-241 + label:before,
+#radio-257 + label:before {
+    transform: scale(0);
+}
+#radio-1:checked + label:before,
+#radio-17:checked + label:before, 
+#radio-33:checked + label:before,
+#radio-49:checked + label:before,
+#radio-65:checked + label:before,
+#radio-81:checked + label:before,
+#radio-97:checked + label:before,
+#radio-113:checked + label:before,
+#radio-129:checked + label:before,
+#radio-145:checked + label:before,
+#radio-161:checked + label:before,
+#radio-177:checked + label:before,
+#radio-193:checked + label:before,
+#radio-209:checked + label:before,
+#radio-225:checked + label:before,
+#radio-241:checked + label:before,
+#radio-257:checked + label:before {
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+
+
+#radio-2 + label,
+#radio-18 + label,
+#radio-34 + label,
+#radio-50 + label,
+#radio-66 + label,
+#radio-82 + label,
+#radio-98 + label,
+#radio-114 + label,
+#radio-130 + label,
+#radio-146 + label,
+#radio-162 + label,
+#radio-178 + label,
+#radio-194 + label,
+#radio-210 + label,
+#radio-226 + label,
+#radio-242 + label,
+#radio-258 + label   {
+    left: -78vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-2 + label:before, 
+#radio-18 + label:before,
+#radio-34 + label:before,
+#radio-50 + label:before,
+#radio-66 + label:before,
+#radio-82 + label:before,
+#radio-98 + label:before,
+#radio-114 + label:before,
+#radio-130 + label:before,
+#radio-146 + label:before,
+#radio-162 + label:before,
+#radio-178 + label:before,
+#radio-194 + label:before,
+#radio-210 + label:before,
+#radio-226 + label:before,
+#radio-242 + label:before,
+#radio-258 + label:before {
+    transform: scale(0);
+}
+#radio-2:checked + label:before, 
+#radio-18:checked + label:before,
+#radio-34:checked + label:before,
+#radio-50:checked + label:before,
+#radio-66:checked + label:before,
+#radio-82:checked + label:before,
+#radio-98:checked + label:before,
+#radio-114:checked + label:before,
+#radio-130:checked + label:before,
+#radio-146:checked + label:before,
+#radio-162:checked + label:before,
+#radio-178:checked + label:before,
+#radio-194:checked + label:before,
+#radio-210:checked + label:before,
+#radio-226:checked + label:before,
+#radio-242:checked + label:before,
+#radio-258:checked + label:before  {
+    
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+
+#radio-3 + label,
+#radio-19 + label,
+#radio-35 + label,
+#radio-51 + label,
+#radio-67 + label,
+#radio-83 + label,
+#radio-99 + label,
+#radio-115 + label,
+#radio-131 + label,
+#radio-147 + label,
+#radio-163 + label,
+#radio-179 + label,
+#radio-195 + label,
+#radio-211 + label,
+#radio-227 + label,
+#radio-243 + label,
+#radio-259 + label  {
+    left: -66vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-3 + label:before,
+#radio-19 + label:before,
+#radio-35 + label:before,
+#radio-51 + label:before,
+#radio-67 + label:before,
+#radio-83 + label:before,
+#radio-99 + label:before,
+#radio-115 + label:before,
+#radio-131 + label:before,
+#radio-147 + label:before,
+#radio-163 + label:before,
+#radio-179 + label:before,
+#radio-195 + label:before,
+#radio-211 + label:before,
+#radio-227 + label:before,
+#radio-243 + label:before,
+#radio-259 + label:before {
+    transform: scale(0);
+}
+#radio-3:checked + label:before,
+#radio-19:checked + label:before,
+#radio-35:checked + label:before,
+#radio-51:checked + label:before,
+#radio-67:checked + label:before,
+#radio-83:checked + label:before,
+#radio-99:checked + label:before,
+#radio-115:checked + label:before,
+#radio-131:checked + label:before,
+#radio-147:checked + label:before,
+#radio-163:checked + label:before,
+#radio-179:checked + label:before,
+#radio-195:checked + label:before,
+#radio-211:checked + label:before,
+#radio-227:checked + label:before,
+#radio-243:checked + label:before,
+#radio-259:checked + label:before  {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+#radio-4 + label,
+#radio-20 + label,
+#radio-36 + label,
+#radio-52 + label,
+#radio-68 + label,
+#radio-84 + label,
+#radio-100 + label,
+#radio-116 + label,
+#radio-132 + label,
+#radio-148 + label,
+#radio-164 + label,
+#radio-180 + label,
+#radio-196 + label,
+#radio-212 + label,
+#radio-228 + label,
+#radio-244 + label,
+#radio-260 + label   {
+    left: -54vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-4 + label:before,
+#radio-20 + label:before,
+#radio-36 + label:before,
+#radio-52 + label:before,
+#radio-68 + label:before,
+#radio-84 + label:before,
+#radio-100 + label:before,
+#radio-116 + label:before,
+#radio-132 + label:before,
+#radio-148 + label:before,
+#radio-164 + label:before,
+#radio-180 + label:before,
+#radio-196 + label:before,
+#radio-212 + label:before,
+#radio-228 + label:before,
+#radio-244 + label:before,
+#radio-260 + label:before {
+    transform: scale(0);
+}
+#radio-4:checked + label:before,
+#radio-20:checked + label:before,
+#radio-36:checked + label:before,
+#radio-52:checked + label:before,
+#radio-68:checked + label:before,
+#radio-84:checked + label:before,
+#radio-100:checked + label:before,
+#radio-116:checked + label:before,
+#radio-132:checked + label:before,
+#radio-148:checked + label:before,
+#radio-164:checked + label:before,
+#radio-180:checked + label:before,
+#radio-196:checked + label:before,
+#radio-212:checked + label:before,
+#radio-228:checked + label:before,
+#radio-244:checked + label:before,
+#radio-260:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+
+#radio-5 + label,
+#radio-21 + label,
+#radio-37 + label,
+#radio-53 + label,
+#radio-69 + label,
+#radio-85 + label,
+#radio-101 + label,
+#radio-117 + label,
+#radio-133 + label,
+#radio-149 + label,
+#radio-165 + label,
+#radio-181 + label,
+#radio-197 + label,
+#radio-213 + label,
+#radio-229 + label,
+#radio-245 + label,
+#radio-261 + label{
+    left: -42vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-5 + label:before,
+#radio-21 + label:before,
+#radio-37 + label:before,
+#radio-53 + label:before,
+#radio-69 + label:before,
+#radio-85 + label:before,
+#radio-101 + label:before,
+#radio-117 + label:before,
+#radio-133 + label:before,
+#radio-149 + label:before,
+#radio-165 + label:before,
+#radio-181 + label:before,
+#radio-197 + label:before,
+#radio-213 + label:before,
+#radio-229 + label:before,
+#radio-245 + label:before,
+#radio-261 + label:before {
+    transform: scale(0);
+}
+#radio-5:checked + label:before,
+#radio-21:checked + label:before,
+#radio-37:checked + label:before,
+#radio-53:checked + label:before,
+#radio-69:checked + label:before,
+#radio-85:checked + label:before,
+#radio-101:checked + label:before,
+#radio-117:checked + label:before,
+#radio-133:checked + label:before,
+#radio-149:checked + label:before,
+#radio-165:checked + label:before,
+#radio-181:checked + label:before,
+#radio-197:checked + label:before,
+#radio-213:checked + label:before,
+#radio-229:checked + label:before,
+#radio-245:checked + label:before,
+#radio-261:checked + label:before {
+    
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+
+#radio-6 + label,
+#radio-22 + label,
+#radio-38 + label,
+#radio-54 + label,
+#radio-70 + label,
+#radio-86 + label,
+#radio-102 + label,
+#radio-118 + label,
+#radio-134 + label,
+#radio-150 + label,
+#radio-166 + label,
+#radio-182 + label,
+#radio-198 + label,
+#radio-214 + label,
+#radio-230 + label,
+#radio-246 + label,
+#radio-262 + label {
+    left: -30vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-6 + label:before,
+#radio-22 + label:before,
+#radio-38 + label:before,
+#radio-54 + label:before,
+#radio-70 + label:before,
+#radio-86 + label:before,
+#radio-102 + label:before,
+#radio-118 + label:before,
+#radio-134 + label:before,
+#radio-150 + label:before,
+#radio-166 + label:before,
+#radio-182 + label:before,
+#radio-198 + label:before,
+#radio-214 + label:before,
+#radio-230 + label:before,
+#radio-246 + label:before,
+#radio-262 + label:before {
+    transform: scale(0);
+}
+#radio-6:checked + label:before,
+#radio-22:checked + label:before,
+#radio-38:checked + label:before,
+#radio-54:checked + label:before,
+#radio-70:checked + label:before,
+#radio-86:checked + label:before,
+#radio-102:checked + label:before,
+#radio-118:checked + label:before,
+#radio-134:checked + label:before,
+#radio-150:checked + label:before,
+#radio-166:checked + label:before,
+#radio-182:checked + label:before,
+#radio-198:checked + label:before,
+#radio-214:checked + label:before,
+#radio-230:checked + label:before,
+#radio-246:checked + label:before,
+#radio-262:checked + label:before  {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+#radio-7 + label,
+#radio-23 + label,
+#radio-39 + label,
+#radio-55 + label,
+#radio-71 + label,
+#radio-87 + label,
+#radio-103 + label,
+#radio-119 + label,
+#radio-135 + label,
+#radio-151 + label,
+#radio-167 + label,
+#radio-183 + label,
+#radio-199 + label,
+#radio-215 + label,
+#radio-231 + label,
+#radio-247 + label,
+#radio-263 + label {
+    left: -18vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-7 + label:before,
+#radio-23 + label:before,
+#radio-39 + label:before,
+#radio-55 + label:before,
+#radio-71 + label:before,
+#radio-87 + label:before,
+#radio-103 + label:before,
+#radio-119 + label:before,
+#radio-135 + label:before,
+#radio-151 + label:before,
+#radio-167 + label:before,
+#radio-183 + label:before,
+#radio-199 + label:before,
+#radio-215 + label:before,
+#radio-231 + label:before,
+#radio-247 + label:before,
+#radio-263 + label:before {
+    transform: scale(0);
+}
+#radio-7:checked + label:before,
+#radio-23:checked + label:before,
+#radio-39:checked + label:before,
+#radio-55:checked + label:before,
+#radio-71:checked + label:before,
+#radio-87:checked + label:before,
+#radio-103:checked + label:before,
+#radio-119:checked + label:before,
+#radio-135:checked + label:before,
+#radio-151:checked + label:before,
+#radio-167:checked + label:before,
+#radio-183:checked + label:before,
+#radio-199:checked + label:before,
+#radio-215:checked + label:before,
+#radio-231:checked + label:before,
+#radio-247:checked + label:before,
+#radio-263:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+
+#radio-8 + label,
+#radio-24 + label,
+#radio-40 + label,
+#radio-56 + label,
+#radio-72 + label,
+#radio-88 + label,
+#radio-104 + label,
+#radio-120 + label,
+#radio-136 + label,
+#radio-152 + label,
+#radio-168 + label,
+#radio-184 + label,
+#radio-200 + label,
+#radio-216 + label,
+#radio-232 + label,
+#radio-248 + label,
+#radio-264 + label {
+    left: -6vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-8 + label:before,
+#radio-24 + label:before,
+#radio-40 + label:before,
+#radio-56 + label:before,
+#radio-72 + label:before,
+#radio-88 + label:before,
+#radio-104 + label:before,
+#radio-120 + label:before,
+#radio-136 + label:before,
+#radio-152 + label:before,
+#radio-168 + label:before,
+#radio-184 + label:before,
+#radio-200 + label:before,
+#radio-216 + label:before,
+#radio-232 + label:before,
+#radio-248 + label:before,
+#radio-264 + label:before {
+    transform: scale(0);
+}
+#radio-8:checked + label:before,
+#radio-24:checked + label:before,
+#radio-40:checked + label:before,
+#radio-56:checked + label:before,
+#radio-72:checked + label:before,
+#radio-88:checked + label:before,
+#radio-104:checked + label:before,
+#radio-120:checked + label:before,
+#radio-136:checked + label:before,
+#radio-152:checked + label:before,
+#radio-168:checked + label:before,
+#radio-184:checked + label:before,
+#radio-200:checked + label:before,
+#radio-216:checked + label:before,
+#radio-232:checked + label:before,
+#radio-248:checked + label:before,
+#radio-264:checked + label:before {
+    
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+
+#radio-9 + label,
+#radio-25 + label,
+#radio-41 + label,
+#radio-57 + label,
+#radio-73 + label,
+#radio-89 + label,
+#radio-105 + label,
+#radio-121 + label,
+#radio-137 + label,
+#radio-153 + label,
+#radio-169 + label,
+#radio-185 + label,
+#radio-201 + label,
+#radio-217 + label,
+#radio-233 + label,
+#radio-249 + label,
+#radio-265 + label {
+    left: 6vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-9 + label:before,
+#radio-25 + label:before,
+#radio-41 + label:before,
+#radio-57 + label:before,
+#radio-73 + label:before,
+#radio-89 + label:before,
+#radio-105 + label:before,
+#radio-121 + label:before,
+#radio-137 + label:before,
+#radio-153 + label:before,
+#radio-169 + label:before,
+#radio-185 + label:before,
+#radio-201 + label:before,
+#radio-217 + label:before,
+#radio-233 + label:before,
+#radio-249 + label:before,
+#radio-265 + label:before {
+    transform: scale(0);
+}
+#radio-9:checked + label:before,
+#radio-25:checked + label:before,
+#radio-41:checked + label:before,
+#radio-57:checked + label:before,
+#radio-73:checked + label:before,
+#radio-89:checked + label:before,
+#radio-105:checked + label:before,
+#radio-121:checked + label:before,
+#radio-137:checked + label:before,
+#radio-153:checked + label:before,
+#radio-169:checked + label:before,
+#radio-185:checked + label:before,
+#radio-201:checked + label:before,
+#radio-217:checked + label:before,
+#radio-233:checked + label:before,
+#radio-249:checked + label:before,
+#radio-265:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+#radio-10 + label,
+#radio-26 + label,
+#radio-42 + label,
+#radio-58 + label,
+#radio-74 + label,
+#radio-90 + label,
+#radio-106 + label,
+#radio-122 + label,
+#radio-138 + label,
+#radio-154 + label,
+#radio-170 + label,
+#radio-186 + label,
+#radio-202 + label,
+#radio-218 + label,
+#radio-234 + label,
+#radio-250 + label,
+#radio-266 + label {
+    left: 18vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-10 + label:before,
+#radio-26 + label:before,
+#radio-42 + label:before,
+#radio-58 + label:before,
+#radio-74 + label:before,
+#radio-90 + label:before,
+#radio-106 + label:before,
+#radio-122 + label:before,
+#radio-138 + label:before,
+#radio-154 + label:before,
+#radio-170 + label:before,
+#radio-186 + label:before,
+#radio-202 + label:before,
+#radio-218 + label:before,
+#radio-234 + label:before,
+#radio-250 + label:before,
+#radio-266 + label:before {
+    transform: scale(0);
+}
+#radio-10:checked + label:before,
+#radio-26:checked + label:before,
+#radio-42:checked + label:before,
+#radio-58:checked + label:before,
+#radio-74:checked + label:before,
+#radio-90:checked + label:before,
+#radio-106:checked + label:before,
+#radio-122:checked + label:before,
+#radio-138:checked + label:before,
+#radio-154:checked + label:before,
+#radio-170:checked + label:before,
+#radio-186:checked + label:before,
+#radio-202:checked + label:before,
+#radio-218:checked + label:before,
+#radio-234:checked + label:before,
+#radio-250:checked + label:before,
+#radio-266:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+#radio-11 + label,
+#radio-27 + label,
+#radio-43 + label,
+#radio-59 + label,
+#radio-75 + label,
+#radio-91 + label,
+#radio-107 + label,
+#radio-123 + label,
+#radio-139 + label,
+#radio-155 + label,
+#radio-171 + label,
+#radio-187 + label,
+#radio-203 + label,
+#radio-219 + label,
+#radio-235 + label,
+#radio-251 + label,
+#radio-267 + label {
+    left: 30vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-11 + label:before,
+#radio-27 + label:before,
+#radio-43 + label:before,
+#radio-59 + label:before,
+#radio-75 + label:before,
+#radio-91 + label:before,
+#radio-107 + label:before,
+#radio-123 + label:before,
+#radio-139 + label:before,
+#radio-155 + label:before,
+#radio-171 + label:before,
+#radio-187 + label:before,
+#radio-203 + label:before,
+#radio-219 + label:before,
+#radio-235 + label:before,
+#radio-251 + label:before,
+#radio-267 + label:before {
+    transform: scale(0);
+}
+#radio-11:checked + label:before,
+#radio-27:checked + label:before,
+#radio-43:checked + label:before,
+#radio-59:checked + label:before,
+#radio-75:checked + label:before,
+#radio-91:checked + label:before,
+#radio-107:checked + label:before,
+#radio-123:checked + label:before,
+#radio-139:checked + label:before,
+#radio-155:checked + label:before,
+#radio-171:checked + label:before,
+#radio-187:checked + label:before,
+#radio-203:checked + label:before,
+#radio-219:checked + label:before,
+#radio-235:checked + label:before,
+#radio-251:checked + label:before,
+#radio-267:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+#radio-12 + label,
+#radio-28 + label,
+#radio-44 + label,
+#radio-60 + label,
+#radio-76 + label,
+#radio-92 + label,
+#radio-108 + label,
+#radio-124 + label,
+#radio-140 + label,
+#radio-156 + label,
+#radio-172 + label,
+#radio-188 + label,
+#radio-204 + label,
+#radio-220 + label,
+#radio-236 + label,
+#radio-252 + label,
+#radio-268 + label {
+    left: 42vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-12 + label:before,
+#radio-28 + label:before,
+#radio-44 + label:before,
+#radio-60 + label:before,
+#radio-76 + label:before,
+#radio-92 + label:before,
+#radio-108 + label:before,
+#radio-124 + label:before,
+#radio-140 + label:before,
+#radio-156 + label:before,
+#radio-172 + label:before,
+#radio-188 + label:before,
+#radio-204 + label:before,
+#radio-220 + label:before,
+#radio-236 + label:before,
+#radio-252 + label:before,
+#radio-268 + label:before {
+    transform: scale(0);
+}
+#radio-12:checked + label:before,
+#radio-28:checked + label:before,
+#radio-44:checked + label:before,
+#radio-60:checked + label:before,
+#radio-76:checked + label:before,
+#radio-92:checked + label:before,
+#radio-108:checked + label:before,
+#radio-124:checked + label:before,
+#radio-140:checked + label:before,
+#radio-156:checked + label:before,
+#radio-172:checked + label:before,
+#radio-188:checked + label:before,
+#radio-204:checked + label:before,
+#radio-220:checked + label:before,
+#radio-236:checked + label:before,
+#radio-252:checked + label:before,
+#radio-268:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+#radio-13 + label,
+#radio-29 + label,
+#radio-45 + label,
+#radio-61 + label,
+#radio-77 + label,
+#radio-93 + label,
+#radio-109 + label,
+#radio-125 + label,
+#radio-141 + label,
+#radio-157 + label,
+#radio-173 + label,
+#radio-189 + label,
+#radio-205 + label,
+#radio-221 + label,
+#radio-237 + label,
+#radio-253 + label,
+#radio-269 + label{
+    left: 54vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-13 + label:before,
+#radio-29 + label:before,
+#radio-45 + label:before,
+#radio-61 + label:before,
+#radio-77 + label:before,
+#radio-93 + label:before,
+#radio-109 + label:before,
+#radio-125 + label:before,
+#radio-141 + label:before,
+#radio-157 + label:before,
+#radio-173 + label:before,
+#radio-189 + label:before,
+#radio-205 + label:before,
+#radio-221 + label:before,
+#radio-237 + label:before,
+#radio-253 + label:before,
+#radio-269 + label:before {
+    transform: scale(0);
+}
+#radio-13:checked + label:before,
+#radio-29:checked + label:before,
+#radio-45:checked + label:before,
+#radio-61:checked + label:before,
+#radio-77:checked + label:before,
+#radio-93:checked + label:before,
+#radio-109:checked + label:before,
+#radio-125:checked + label:before,
+#radio-141:checked + label:before,
+#radio-157:checked + label:before,
+#radio-173:checked + label:before,
+#radio-189:checked + label:before,
+#radio-205:checked + label:before,
+#radio-221:checked + label:before,
+#radio-237:checked + label:before,
+#radio-253:checked + label:before,
+#radio-269:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+#radio-14 + label,
+#radio-30 + label,
+#radio-46 + label,
+#radio-62 + label,
+#radio-78 + label,
+#radio-94 + label,
+#radio-110 + label,
+#radio-126 + label,
+#radio-142 + label,
+#radio-158 + label,
+#radio-174 + label,
+#radio-190 + label,
+#radio-206 + label,
+#radio-222 + label,
+#radio-238 + label,
+#radio-254 + label,
+#radio-270 + label {
+    left: 66vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-14 + label:before,
+#radio-30 + label:before,
+#radio-46 + label:before,
+#radio-62 + label:before,
+#radio-78 + label:before,
+#radio-94 + label:before,
+#radio-110 + label:before,
+#radio-126 + label:before,
+#radio-142 + label:before,
+#radio-158 + label:before,
+#radio-174 + label:before,
+#radio-190 + label:before,
+#radio-206 + label:before,
+#radio-222 + label:before,
+#radio-238 + label:before,
+#radio-254 + label:before,
+#radio-270 + label:before {
+    transform: scale(0);
+}
+#radio-14:checked + label:before,
+#radio-30:checked + label:before,
+#radio-46:checked + label:before,
+#radio-62:checked + label:before,
+#radio-78:checked + label:before,
+#radio-94:checked + label:before,
+#radio-110:checked + label:before,
+#radio-126:checked + label:before,
+#radio-142:checked + label:before,
+#radio-158:checked + label:before,
+#radio-174:checked + label:before,
+#radio-190:checked + label:before,
+#radio-206:checked + label:before,
+#radio-222:checked + label:before,
+#radio-238:checked + label:before,
+#radio-254:checked + label:before,
+#radio-270:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+#radio-15 + label,
+#radio-31 + label,
+#radio-47 + label,
+#radio-63 + label,
+#radio-79 + label,
+#radio-95 + label,
+#radio-111 + label,
+#radio-127 + label,
+#radio-143 + label,
+#radio-159 + label,
+#radio-175 + label,
+#radio-191 + label,
+#radio-207 + label,
+#radio-223 + label,
+#radio-239 + label,
+#radio-255 + label,
+#radio-271 + label {
+    left: 78vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-15 + label:before,
+#radio-31 + label:before,
+#radio-47 + label:before,
+#radio-63 + label:before,
+#radio-79 + label:before,
+#radio-95 + label:before,
+#radio-111 + label:before,
+#radio-127 + label:before,
+#radio-143 + label:before,
+#radio-159 + label:before,
+#radio-175 + label:before,
+#radio-191 + label:before,
+#radio-207 + label:before,
+#radio-223 + label:before,
+#radio-239 + label:before,
+#radio-255 + label:before,
+#radio-271 + label:before {
+    transform: scale(0);
+}
+#radio-15:checked + label:before,
+#radio-31:checked + label:before,
+#radio-47:checked + label:before,
+#radio-63:checked + label:before,
+#radio-79:checked + label:before,
+#radio-95:checked + label:before,
+#radio-111:checked + label:before,
+#radio-127:checked + label:before,
+#radio-143:checked + label:before,
+#radio-159:checked + label:before,
+#radio-175:checked + label:before,
+#radio-191:checked + label:before,
+#radio-207:checked + label:before,
+#radio-223:checked + label:before,
+#radio-239:checked + label:before,
+#radio-255:checked + label:before,
+#radio-271:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+#radio-16 + label,
+#radio-32 + label,
+#radio-48 + label,
+#radio-64 + label,
+#radio-80 + label,
+#radio-96 + label,
+#radio-112 + label,
+#radio-128 + label,
+#radio-144 + label,
+#radio-160 + label,
+#radio-176 + label,
+#radio-192 + label,
+#radio-208 + label,
+#radio-224 + label,
+#radio-240 + label,
+#radio-256 + label,
+#radio-272 + label {
+    left: 90vw;
+  
+    background: rgb(80, 79, 79);
+    border-color: rgb(12, 4, 3)!important;
+    animation-delay: 0s;
+}
+#radio-16 + label:before,
+#radio-32 + label:before,
+#radio-48 + label:before,
+#radio-64 + label:before,
+#radio-80 + label:before,
+#radio-96 + label:before,
+#radio-112 + label:before,
+#radio-128 + label:before,
+#radio-144 + label:before,
+#radio-160 + label:before,
+#radio-176 + label:before,
+#radio-192 + label:before,
+#radio-208 + label:before,
+#radio-224 + label:before,
+#radio-240 + label:before,
+#radio-256 + label:before,
+#radio-272 + label:before{
+    transform: scale(0);
+}
+#radio-16:checked + label:before,
+#radio-32:checked + label:before,
+#radio-48:checked + label:before,
+#radio-64:checked + label:before,
+#radio-80:checked + label:before,
+#radio-96:checked + label:before,
+#radio-112:checked + label:before,
+#radio-128:checked + label:before,
+#radio-144:checked + label:before,
+#radio-160:checked + label:before,
+#radio-176:checked + label:before,
+#radio-192:checked + label:before,
+#radio-208:checked + label:before,
+#radio-224:checked + label:before,
+#radio-240:checked + label:before,
+#radio-256:checked + label:before,
+#radio-272:checked + label:before {
+    transform: scale(1);
+    transition: all .4s;
+}
+
+
+
+
+
+
+/************************************************************************
+                 NO MOSTRAR LOS BOTONES RADIO
+************************************************************************/
+[type="radio"] {
+    display: none;
+} 

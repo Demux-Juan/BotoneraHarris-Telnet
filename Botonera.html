@@ -1,0 +1,5018 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <LINK REL=StyleSheet HREF="boton.css" TYPE="text/css" MEDIA=screen>
+  <link href="icheck-bootstrap.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+  <H1 ALIGN= "center"> BOTONERA </H1>
+  <br>
+  <H3 ALIGN= "center"> Salidas </H3>
+  <br>
+  <!--*************************************************************************
+                         CANALES DE SALIDA
+  **************************************************************************-->
+  <div id="out" class="Salidas" >
+    <div class="ch1">CH1 </div>
+    <input type="radio"  class="radio"  id="radio-1" name="tab" value="00001" onclick="F1()" />
+    <label for="radio-1"></label>
+    <div class="ch2">CH2 </div>
+    <input type="radio"  class="radio"  id="radio-2" name="tab" value="00002" onclick="F2()" />
+    <label for="radio-2"></label>
+    <div class="ch3">CH3 </div>
+    <input type="radio"  class="radio"  id="radio-3" name="tab" value="00003" onclick="F3()" />
+    <label for="radio-3"></label>
+    <div class="ch4">CH4 </div>
+    <input type="radio"  class="radio"  id="radio-4" name="tab" value="00004" onclick="F4()" />
+    <label for="radio-4"></label>
+    <div class="ch5">CH5 </div>
+    <input type="radio"  class="radio"  id="radio-5" name="tab" value="00005" onclick="F5()" />
+    <label for="radio-5"></label>
+    <div class="ch6">CH6 </div>
+    <input type="radio"  class="radio"  id="radio-6" name="tab" value="00006" onclick="F6()" />
+    <label for="radio-6"></label>
+    <div class="ch7">CH7 </div>
+    <input type="radio"  class="radio"  id="radio-7" name="tab" value="00007" onclick="F7()" />
+    <label for="radio-7"></label>
+    <div class="ch8">CH8 </div>
+    <input type="radio"  class="radio"  id="radio-8" name="tab" value="00008" onclick="F8()" />
+    <label for="radio-8"></label>
+    <div class="ch9">CH9 </div>
+    <input type="radio"  class="radio"  id="radio-9" name="tab" value="00009" onclick="F9()" />
+    <label for="radio-9"></label>
+    <div class="ch10">CH10 </div>
+    <input type="radio"  class="radio"  id="radio-10"name="tab" value="000010" onclick="F10()" />
+    <label for="radio-10"></label>
+    <div class="ch11">CH11 </div>
+    <input type="radio"  class="radio"  id="radio-11"name="tab" value="000011" onclick="F11()" />
+    <label for="radio-11"></label>
+    <div class="ch12">CH12 </div>
+    <input type="radio"  class="radio"  id="radio-12"name="tab" value="000012" onclick="F12()" />
+    <label for="radio-12"></label>
+    <div class="ch13">CH13 </div>
+    <input type="radio"  class="radio"  id="radio-13"name="tab" value="000013" onclick="F13()" />
+    <label for="radio-13"></label>
+    <div class="ch14">CH14 </div>
+    <input type="radio"  class="radio"  id="radio-14"name="tab" value="000014" onclick="F14()" />
+    <label for="radio-14"></label>
+    <div class="ch15">CH15 </div>
+    <input type="radio"  class="radio"  id="radio-15" name="tab" value="000015" onclick="F15()" />
+    <label for="radio-15"></label>
+    <div class="ch16">CH16 </div>
+    <input type="radio"  class="radio"  id="radio-16" name="tab" value="000016" onclick="F16()" />
+    <label for="radio-16"></label>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<H3 ALIGN= "center" > Entradas </H3>
+<br>
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH1 DE SALIDA
+**************************************************************************-->
+<div id="bCh1"   style="display: none;">
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+  <!-- poner  checked para dejar en default -->
+  <input type="radio"  class="radio"  id="radio-17" name="tab1" value="00001" onclick="ajax1_00001()" />
+  <label for="radio-17"></label>
+  <input type="radio"  class="radio"  id="radio-18" name="tab1" value="00002" onclick="ajax1_00002()"/>
+  <label for="radio-18"></label>
+  <input type="radio"  class="radio"  id="radio-19" name="tab1" value="00003" onclick="ajax1_00003()"/>
+  <label for="radio-19"></label>
+  <input type="radio"  class="radio"  id="radio-20" name="tab1" value="00004" onclick="ajax1_00004()"/>
+  <label for="radio-20"></label>
+  <input type="radio"  class="radio"  id="radio-21" name="tab1" value="00005" onclick="ajax1_00005()"/>
+  <label for="radio-21"></label>
+  <input type="radio"  class="radio"  id="radio-22" name="tab1" value="00006" onclick="ajax1_00006()"/>
+  <label for="radio-22"></label>
+  <input type="radio"  class="radio"  id="radio-23" name="tab1" value="00007" onclick="ajax1_00007()"/>
+  <label for="radio-23"></label>
+  <input type="radio"  class="radio"  id="radio-24" name="tab1" value="00008" onclick="ajax1_00008()"/>
+  <label for="radio-24"></label>
+  <input type="radio"  class="radio"  id="radio-25" name="tab1" value="00009" onclick="ajax1_00009()"/>
+  <label for="radio-25"></label>
+  <input type="radio"  class="radio"  id="radio-26" name="tab1" value="000010" onclick="ajax1_00010()"/>
+  <label for="radio-26"></label>
+  <input type="radio"  class="radio"  id="radio-27" name="tab1" value="000011" onclick="ajax1_00011()" />
+  <label for="radio-27"></label>
+  <input type="radio"  class="radio"  id="radio-28" name="tab1" value="000012" onclick="ajax1_00012()"/>
+  <label for="radio-28"></label>
+  <input type="radio"  class="radio"  id="radio-29" name="tab1" value="000013" onclick="ajax1_00013()"/>
+  <label for="radio-29"></label>
+  <input type="radio"  class="radio"  id="radio-30" name="tab1" value="000014" onclick="ajax1_00014()" />
+  <label for="radio-30"></label>
+  <input type="radio"  class="radio"  id="radio-31" name="tab1" value="000015" onclick="ajax1_00015()"/>
+  <label for="radio-31"></label>
+  <input type="radio"  class="radio"  id="radio-32" name="tab1" value="000016" onclick="ajax1_00016()"/>
+  <label for="radio-32"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH2 DE SALIDA
+**************************************************************************-->
+<div id="bCh2"   style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-33" name="tab2" value="00001" onclick="ajax2_00001()"/>
+  <label for="radio-33"></label>
+  <input type="radio"  class="radio"  id="radio-34" name="tab2" value="00002" onclick="ajax2_00002()"/>
+  <label for="radio-34"></label>
+  <input type="radio"  class="radio"  id="radio-35" name="tab2" value="00003" onclick="ajax2_00003()" />
+  <label for="radio-35"></label>
+  <input type="radio"  class="radio"  id="radio-36" name="tab2" value="00004" onclick="ajax2_00004()"/>
+  <label for="radio-36"></label>
+  <input type="radio"  class="radio"  id="radio-37" name="tab2" value="00005" onclick="ajax2_00005()"/>
+  <label for="radio-37"></label>
+  <input type="radio"  class="radio"  id="radio-38" name="tab2" value="00006" onclick="ajax2_00006()"/>
+  <label for="radio-38"></label>
+  <input type="radio"  class="radio"  id="radio-39" name="tab2" value="00007" onclick="ajax2_00007()"/>
+  <label for="radio-39"></label>
+  <input type="radio"  class="radio"  id="radio-40" name="tab2" value="00008" onclick="ajax2_00008()"/>
+  <label for="radio-40"></label>
+  <input type="radio"  class="radio"  id="radio-41" name="tab2" value="00009" onclick="ajax2_00009()"/>
+  <label for="radio-41"></label>
+  <input type="radio"  class="radio"  id="radio-42"name="tab2" value="000010"  onclick="ajax2_00010()"/>
+  <label for="radio-42"></label>
+  <input type="radio"  class="radio"  id="radio-43"name="tab2" value="000011"  onclick="ajax2_00011()"/>
+  <label for="radio-43"></label>
+  <input type="radio"  class="radio"  id="radio-44"name="tab2" value="000012"  onclick="ajax2_00012()"/>
+  <label for="radio-44"></label>
+  <input type="radio"  class="radio"  id="radio-45"name="tab2" value="000013"  onclick="ajax2_00013()"/>
+  <label for="radio-45"></label>
+  <input type="radio"  class="radio"  id="radio-46"name="tab2" value="000014"  onclick="ajax2_00014()"/>
+  <label for="radio-46"></label>
+  <input type="radio"  class="radio"  id="radio-47" name="tab2" value="000015"  onclick="ajax2_00015()"/>
+  <label for="radio-47"></label>
+  <input type="radio"  class="radio"  id="radio-48" name="tab2" value="000016" onclick="ajax2_00016()" />
+  <label for="radio-48"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH3 DE SALIDA
+**************************************************************************-->
+
+<div id="bCh3"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-49" name="tab3" value="00001" onclick="ajax3_00001()" />
+  <label for="radio-49"></label>
+  <input type="radio"  class="radio"  id="radio-50" name="tab3" value="00002" onclick="ajax3_00002()"/>
+  <label for="radio-50"></label>
+  <input type="radio"  class="radio"  id="radio-51" name="tab3" value="00003" onclick="ajax3_00003()"/>
+  <label for="radio-51"></label>
+  <input type="radio"  class="radio"  id="radio-52" name="tab3" value="00004" onclick="ajax3_00004()"/>
+  <label for="radio-52"></label>
+  <input type="radio"  class="radio"  id="radio-53" name="tab3" value="00005" onclick="ajax3_00005()"/>
+  <label for="radio-53"></label>
+  <input type="radio"  class="radio"  id="radio-54" name="tab3" value="00006" onclick="ajax3_00006()"/>
+  <label for="radio-54"></label>
+  <input type="radio"  class="radio"  id="radio-55" name="tab3" value="00007" onclick="ajax3_00007()"/>
+  <label for="radio-55"></label>
+  <input type="radio"  class="radio"  id="radio-56" name="tab3" value="00008" onclick="ajax3_00008()"/>
+  <label for="radio-56"></label>
+  <input type="radio"  class="radio"  id="radio-57" name="tab3" value="00009" onclick="ajax3_00009()"/>
+  <label for="radio-57"></label>
+  <input type="radio"  class="radio"  id="radio-58"name="tab3" value="000010"  onclick="ajax3_00010()"/>
+  <label for="radio-58"></label>
+  <input type="radio"  class="radio"  id="radio-59"name="tab3" value="000011"  onclick="ajax3_00011()"/>
+  <label for="radio-59"></label>
+  <input type="radio"  class="radio"  id="radio-60"name="tab3" value="000012"  onclick="ajax3_00012()"/>
+  <label for="radio-60"></label>
+  <input type="radio"  class="radio"  id="radio-61"name="tab3" value="000013"  onclick="ajax3_00013()"/>
+  <label for="radio-61"></label>
+  <input type="radio"  class="radio"  id="radio-62"name="tab3" value="000014"  onclick="ajax3_00014()"/>
+  <label for="radio-62"></label>
+  <input type="radio"  class="radio"  id="radio-63" name="tab3" value="000015"  onclick="ajax3_00015()"/>
+  <label for="radio-63"></label>
+  <input type="radio"  class="radio"  id="radio-64" name="tab3" value="000016"  onclick="ajax3_00016()"/>
+  <label for="radio-64"></label>
+
+</div> 
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH4 DE SALIDA
+**************************************************************************-->
+
+<div id="bCh4"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-65" name="tab4" value="00001" onclick="ajax4_00001()" />
+  <label for="radio-65"></label>
+  <input type="radio"  class="radio"  id="radio-66" name="tab4" value="00002" onclick="ajax4_00002()"/>
+  <label for="radio-66"></label>
+  <input type="radio"  class="radio"  id="radio-67" name="tab4" value="00003" onclick="ajax4_00003()"/>
+  <label for="radio-67"></label>
+  <input type="radio"  class="radio"  id="radio-68" name="tab4" value="00004" onclick="ajax4_00004()"/>
+  <label for="radio-68"></label>
+  <input type="radio"  class="radio"  id="radio-69" name="tab4" value="00005" onclick="ajax4_00005()"/>
+  <label for="radio-69"></label>
+  <input type="radio"  class="radio"  id="radio-70" name="tab4" value="00006" onclick="ajax4_00006()"/>
+  <label for="radio-70"></label>
+  <input type="radio"  class="radio"  id="radio-71" name="tab4" value="00007" onclick="ajax4_00007()"/>
+  <label for="radio-71"></label>
+  <input type="radio"  class="radio"  id="radio-72" name="tab4" value="00008" onclick="ajax4_00008()"/>
+  <label for="radio-72"></label>
+  <input type="radio"  class="radio"  id="radio-73" name="tab4" value="00009" onclick="ajax4_00009()"/>
+  <label for="radio-73"></label>
+  <input type="radio"  class="radio"  id="radio-74"name="tab4" value="000010" onclick="ajax4_00010()" />
+  <label for="radio-74"></label>
+  <input type="radio"  class="radio"  id="radio-75"name="tab4" value="000011" onclick="ajax4_00011()" />
+  <label for="radio-75"></label>
+  <input type="radio"  class="radio"  id="radio-76"name="tab4" value="000012" onclick="ajax4_00012()" />
+  <label for="radio-76"></label>
+  <input type="radio"  class="radio"  id="radio-77"name="tab4" value="000013" onclick="ajax4_00013()" />
+  <label for="radio-77"></label>
+  <input type="radio"  class="radio"  id="radio-78"name="tab4" value="000014"  onclick="ajax4_00014()"/>
+  <label for="radio-78"></label>
+  <input type="radio"  class="radio"  id="radio-79" name="tab4" value="000015" onclick="ajax4_00015()" />
+  <label for="radio-79"></label>
+  <input type="radio"  class="radio"  id="radio-80" name="tab4" value="000016"  onclick="ajax4_00016()"/>
+  <label for="radio-80"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH5 DE SALIDA
+**************************************************************************-->
+  <div id="bCh5" style="display: none;">
+    
+    <div style="color:red" class="ch1">CH1 </div>
+    <div style="color:red" class="ch2">CH2 </div>
+    <div style="color:red" class="ch3">CH3 </div>
+    <div style="color:red" class="ch4">CH4 </div>
+    <div style="color:red" class="ch5">CH5 </div>
+    <div style="color:red" class="ch6">CH6 </div>
+    <div style="color:red" class="ch7">CH7 </div>
+    <div style="color:red" class="ch8">CH8 </div>
+    <div style="color:red" class="ch9">CH9</div>
+    <div style="color:red" class="ch10">CH10 </div>
+    <div style="color:red" class="ch11">CH11</div>
+    <div style="color:red" class="ch12">CH12</div>
+    <div style="color:red" class="ch13">CH13 </div>
+    <div style="color:red" class="ch14">CH14</div>
+    <div style="color:red" class="ch15">CH15 </div>
+    <div style="color:red" class="ch16">CH16 </div>
+
+    <input type="radio"  class="radio"  id="radio-81" name="tab5" value="00001" onclick="ajax5_00001()" />
+    <label for="radio-81"></label>
+    <input type="radio"  class="radio"  id="radio-82" name="tab5" value="00002" onclick="ajax5_00002()"/>
+    <label for="radio-82"></label>
+    <input type="radio"  class="radio"  id="radio-83" name="tab5" value="00003" onclick="ajax5_00003()"/>
+    <label for="radio-83"></label>
+    <input type="radio"  class="radio"  id="radio-84" name="tab5" value="00004" onclick="ajax5_00004()"/>
+    <label for="radio-84"></label>
+    <input type="radio"  class="radio"  id="radio-85" name="tab5" value="00005" onclick="ajax5_00005()"/>
+    <label for="radio-85"></label>
+    <input type="radio"  class="radio"  id="radio-86" name="tab5" value="00006" onclick="ajax5_00006()"/>
+    <label for="radio-86"></label>
+    <input type="radio"  class="radio"  id="radio-87" name="tab5" value="00007" onclick="ajax5_00007()"/>
+    <label for="radio-87"></label>
+    <input type="radio"  class="radio"  id="radio-88" name="tab5" value="00008" onclick="ajax5_00008()"/>
+    <label for="radio-88"></label>
+    <input type="radio"  class="radio"  id="radio-89" name="tab5" value="00009" onclick="ajax5_00009()"/>
+    <label for="radio-89"></label>
+    <input type="radio"  class="radio"  id="radio-90"name="tab5" value="000010" onclick="ajax5_00010()" />
+    <label for="radio-90"></label>
+    <input type="radio"  class="radio"  id="radio-91"name="tab5" value="000011" onclick="ajax5_00011()" />
+    <label for="radio-91"></label>
+    <input type="radio"  class="radio"  id="radio-92"name="tab5" value="000012"  onclick="ajax5_00012()"/>
+    <label for="radio-92"></label>
+    <input type="radio"  class="radio"  id="radio-93"name="tab5" value="000013"  onclick="ajax5_00013()"/>
+    <label for="radio-93"></label>
+    <input type="radio"  class="radio"  id="radio-94"name="tab5" value="000014"  onclick="ajax5_00014()"/>
+    <label for="radio-94"></label>
+    <input type="radio"  class="radio"  id="radio-95" name="tab5" value="000015"  onclick="ajax5_00015()"/>
+    <label for="radio-95"></label>
+    <input type="radio"  class="radio"  id="radio-96" name="tab5" value="000016" onclick="ajax5_00016()" />
+    <label for="radio-96"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH6 DE SALIDA
+**************************************************************************-->
+<div id="bCh6"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-97" name="tab6" value="00001" onclick="ajax6_00001()" />
+  <label for="radio-97"></label>
+  <input type="radio"  class="radio"  id="radio-98" name="tab6" value="00002" onclick="ajax6_00002()"/>
+  <label for="radio-98"></label>
+  <input type="radio"  class="radio"  id="radio-99" name="tab6" value="00003" onclick="ajax6_00003()"/>
+  <label for="radio-99"></label>
+  <input type="radio"  class="radio"  id="radio-100" name="tab6" value="00004" onclick="ajax6_00004()"/>
+  <label for="radio-100"></label>
+  <input type="radio"  class="radio"  id="radio-101" name="tab6" value="00005" onclick="ajax6_00005()"/>
+  <label for="radio-101"></label>
+  <input type="radio"  class="radio"  id="radio-102" name="tab6" value="00006" onclick="ajax6_00006()"/>
+  <label for="radio-102"></label>
+  <input type="radio"  class="radio"  id="radio-103" name="tab6" value="00007" onclick="ajax6_00007()"/>
+  <label for="radio-103"></label>
+  <input type="radio"  class="radio"  id="radio-104" name="tab6" value="00008" onclick="ajax6_00008()"/>
+  <label for="radio-104"></label>
+  <input type="radio"  class="radio"  id="radio-105" name="tab6" value="00009" onclick="ajax6_00009()"/>
+  <label for="radio-105"></label>
+  <input type="radio"  class="radio"  id="radio-106"name="tab6" value="000010"  onclick="ajax6_00010()"/>
+  <label for="radio-106"></label>
+  <input type="radio"  class="radio"  id="radio-107"name="tab6" value="000011"  onclick="ajax6_00011()"/>
+  <label for="radio-107"></label>
+  <input type="radio"  class="radio"  id="radio-108"name="tab6" value="000012"  onclick="ajax6_00012()"/>
+  <label for="radio-108"></label>
+  <input type="radio"  class="radio"  id="radio-109"name="tab6" value="000013"  onclick="ajax6_00013()"/>
+  <label for="radio-109"></label>
+  <input type="radio"  class="radio"  id="radio-110"name="tab6" value="000014"  onclick="ajax6_00014()"/>
+  <label for="radio-110"></label>
+  <input type="radio"  class="radio"  id="radio-111" name="tab6" value="000015"  onclick="ajax6_00015()"/>
+  <label for="radio-111"></label>
+  <input type="radio"  class="radio"  id="radio-112" name="tab6" value="000016" onclick="ajax6_00016()" />
+  <label for="radio-112"></label>
+
+</div> 
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH7 DE SALIDA
+**************************************************************************-->
+<div id="bCh7"  style="display: none;">
+ 
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-113" name="tab7" value="00001" onclick="ajax7_00001()" />
+  <label for="radio-113"></label>
+  <input type="radio"  class="radio"  id="radio-114" name="tab7" value="00002" onclick="ajax7_00002()"/>
+  <label for="radio-114"></label>
+  <input type="radio"  class="radio"  id="radio-115" name="tab7" value="00003" onclick="ajax7_00003()"/>
+  <label for="radio-115"></label>
+  <input type="radio"  class="radio"  id="radio-116" name="tab7" value="00004" onclick="ajax7_00004()"/>
+  <label for="radio-116"></label>
+  <input type="radio"  class="radio"  id="radio-117" name="tab7" value="00005" onclick="ajax7_00005()"/>
+  <label for="radio-117"></label>
+  <input type="radio"  class="radio"  id="radio-118" name="tab7" value="00006" onclick="ajax7_00006()"/>
+  <label for="radio-118"></label>
+  <input type="radio"  class="radio"  id="radio-119" name="tab7" value="00007" onclick="ajax7_00007()"/>
+  <label for="radio-119"></label>
+  <input type="radio"  class="radio"  id="radio-120" name="tab7" value="00008" onclick="ajax7_00008()"/>
+  <label for="radio-120"></label>
+  <input type="radio"  class="radio"  id="radio-121" name="tab7" value="00009" onclick="ajax7_00009()"/>
+  <label for="radio-121"></label>
+  <input type="radio"  class="radio"  id="radio-122"name="tab7" value="000010"  onclick="ajax7_00010()"/>
+  <label for="radio-122"></label>
+  <input type="radio"  class="radio"  id="radio-123"name="tab7" value="000011"  onclick="ajax7_00011()"/>
+  <label for="radio-123"></label>
+  <input type="radio"  class="radio"  id="radio-124"name="tab7" value="000012"  onclick="ajax7_00012()"/>
+  <label for="radio-124"></label>
+  <input type="radio"  class="radio"  id="radio-125"name="tab7" value="000013"  onclick="ajax7_00013()"/>
+  <label for="radio-125"></label>
+  <input type="radio"  class="radio"  id="radio-126"name="tab7" value="000014"  onclick="ajax7_00014()"/>
+  <label for="radio-126"></label>
+  <input type="radio"  class="radio"  id="radio-127" name="tab7" value="000015"  onclick="ajax7_00015()"/>
+  <label for="radio-127"></label>
+  <input type="radio"  class="radio"  id="radio-128" name="tab7" value="000016"  onclick="ajax7_00016()"/>
+  <label for="radio-128"></label>
+
+</div>
+
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH8 DE SALIDA
+**************************************************************************-->
+<div id="bCh8"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-129" name="tab8" value="00001" onclick="ajax8_00001()"  />
+  <label for="radio-129"></label>
+  <input type="radio"  class="radio"  id="radio-130" name="tab8" value="00002" onclick="ajax8_00002()"/>
+  <label for="radio-130"></label>
+  <input type="radio"  class="radio"  id="radio-131" name="tab8" value="00003" onclick="ajax8_00003()"/>
+  <label for="radio-131"></label>
+  <input type="radio"  class="radio"  id="radio-132" name="tab8" value="00004" onclick="ajax8_00004()"/>
+  <label for="radio-132"></label>
+  <input type="radio"  class="radio"  id="radio-133" name="tab8" value="00005" onclick="ajax8_00005()"/>
+  <label for="radio-133"></label>
+  <input type="radio"  class="radio"  id="radio-134" name="tab8" value="00006" onclick="ajax8_00006()"/>
+  <label for="radio-134"></label>
+  <input type="radio"  class="radio"  id="radio-135" name="tab8" value="00007" onclick="ajax8_00007()"/>
+  <label for="radio-135"></label>
+  <input type="radio"  class="radio"  id="radio-136" name="tab8" value="00008" onclick="ajax8_00008()"/>
+  <label for="radio-136"></label>
+  <input type="radio"  class="radio"  id="radio-137" name="tab8" value="00009" onclick="ajax8_00009()"/>
+  <label for="radio-137"></label>
+  <input type="radio"  class="radio"  id="radio-138"name="tab8" value="000010"  onclick="ajax8_00010()"/>
+  <label for="radio-138"></label>
+  <input type="radio"  class="radio"  id="radio-139"name="tab8" value="000011"  onclick="ajax8_00011()"/>
+  <label for="radio-139"></label>
+  <input type="radio"  class="radio"  id="radio-140"name="tab8" value="000012"  onclick="ajax8_00012()"/>
+  <label for="radio-140"></label>
+  <input type="radio"  class="radio"  id="radio-141"name="tab8" value="000013"  onclick="ajax8_00013()"/>
+  <label for="radio-141"></label>
+  <input type="radio"  class="radio"  id="radio-142"name="tab8" value="000014"  onclick="ajax8_00014()"/>
+  <label for="radio-142"></label>
+  <input type="radio"  class="radio"  id="radio-143" name="tab8" value="000015"  onclick="ajax8_00015()"/>
+  <label for="radio-143"></label>
+  <input type="radio"  class="radio"  id="radio-144" name="tab8" value="000016"  onclick="ajax8_00016()"/>
+  <label for="radio-144"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH9 DE SALIDA
+**************************************************************************-->
+<div id="bCh9"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-145" name="tab9" value="00001" onclick="ajax9_00001()" />
+  <label for="radio-145"></label>
+  <input type="radio"  class="radio"  id="radio-146" name="tab9" value="00002" onclick="ajax9_00002()"/>
+  <label for="radio-146"></label>
+  <input type="radio"  class="radio"  id="radio-147" name="tab9" value="00003" onclick="ajax9_00003()"/>
+  <label for="radio-147"></label>
+  <input type="radio"  class="radio"  id="radio-148" name="tab9" value="00004" onclick="ajax9_00004()"/>
+  <label for="radio-148"></label>
+  <input type="radio"  class="radio"  id="radio-149" name="tab9" value="00005" onclick="ajax9_00005()"/>
+  <label for="radio-149"></label>
+  <input type="radio"  class="radio"  id="radio-150" name="tab9" value="00006" onclick="ajax9_00006()"/>
+  <label for="radio-150"></label>
+  <input type="radio"  class="radio"  id="radio-151" name="tab9" value="00007" onclick="ajax9_00007()"/>
+  <label for="radio-151"></label>
+  <input type="radio"  class="radio"  id="radio-152" name="tab9" value="00008" onclick="ajax9_00008()"/>
+  <label for="radio-152"></label>
+  <input type="radio"  class="radio"  id="radio-153" name="tab9" value="00009" onclick="ajax9_00009()"/>
+  <label for="radio-153"></label>
+  <input type="radio"  class="radio"  id="radio-154"name="tab9" value="000010"  onclick="ajax9_00010()"/>
+  <label for="radio-154"></label>
+  <input type="radio"  class="radio"  id="radio-155"name="tab9" value="000011"  onclick="ajax9_00011()"/>
+  <label for="radio-155"></label>
+  <input type="radio"  class="radio"  id="radio-156"name="tab9" value="000012"  onclick="ajax9_00012()"/>
+  <label for="radio-156"></label>
+  <input type="radio"  class="radio"  id="radio-157"name="tab9" value="000013"  onclick="ajax9_00013()"/>
+  <label for="radio-157"></label>
+  <input type="radio"  class="radio"  id="radio-158"name="tab9" value="000014"  onclick="ajax9_00014()"/>
+  <label for="radio-158"></label>
+  <input type="radio"  class="radio"  id="radio-159" name="tab9" value="000015"  onclick="ajax9_00015()"/>
+  <label for="radio-159"></label>
+  <input type="radio"  class="radio"  id="radio-160" name="tab9" value="000016"  onclick="ajax9_00016()"/>
+  <label for="radio-160"></label>
+
+</div> 
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH10 DE SALIDA
+**************************************************************************-->
+<div id="bCh10"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-161" name="tab10" value="00001" onclick="ajax10_00001()" />
+  <label for="radio-161"></label>
+  <input type="radio"  class="radio"  id="radio-162" name="tab10" value="00002" onclick="ajax10_00002()"/>
+  <label for="radio-162"></label>
+  <input type="radio"  class="radio"  id="radio-163" name="tab10" value="00003" onclick="ajax10_00003()"/>
+  <label for="radio-163"></label>
+  <input type="radio"  class="radio"  id="radio-164" name="tab10" value="00004" onclick="ajax10_00004()"/>
+  <label for="radio-164"></label>
+  <input type="radio"  class="radio"  id="radio-165" name="tab10" value="00005" onclick="ajax10_00005()"/>
+  <label for="radio-165"></label>
+  <input type="radio"  class="radio"  id="radio-166" name="tab10" value="00006" onclick="ajax10_00006()"/>
+  <label for="radio-166"></label>
+  <input type="radio"  class="radio"  id="radio-167" name="tab10" value="00007" onclick="ajax10_00007()"/>
+  <label for="radio-167"></label>
+  <input type="radio"  class="radio"  id="radio-168" name="tab10" value="00008" onclick="ajax10_00008()"/>
+  <label for="radio-168"></label>
+  <input type="radio"  class="radio"  id="radio-169" name="tab10" value="00009" onclick="ajax10_00009()"/>
+  <label for="radio-169"></label>
+  <input type="radio"  class="radio"  id="radio-170"name="tab10" value="000010" onclick="ajax10_00010()"/>
+  <label for="radio-170"></label>
+  <input type="radio"  class="radio"  id="radio-171"name="tab10" value="000011" onclick="ajax10_00011()" />
+  <label for="radio-171"></label>
+  <input type="radio"  class="radio"  id="radio-172"name="tab10" value="000012" onclick="ajax10_00012()"/>
+  <label for="radio-172"></label>
+  <input type="radio"  class="radio"  id="radio-173"name="tab10" value="000013" onclick="ajax10_00013()" />
+  <label for="radio-173"></label>
+  <input type="radio"  class="radio"  id="radio-174"name="tab10" value="000014" onclick="ajax10_00014()" />
+  <label for="radio-174"></label>
+  <input type="radio"  class="radio"  id="radio-175" name="tab10" value="000015" onclick="ajax10_00015()" />
+  <label for="radio-175"></label>
+  <input type="radio"  class="radio"  id="radio-176" name="tab10" value="000016" onclick="ajax10_00016()" />
+  <label for="radio-176"></label>
+
+ 
+
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH11 DE SALIDA
+**************************************************************************-->
+<div id="bCh11"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-177" name="tab11" value="00001" onclick="ajax11_00001()" />
+  <label for="radio-177"></label>
+  <input type="radio"  class="radio"  id="radio-178" name="tab11" value="00002" onclick="ajax11_00002()"/>
+  <label for="radio-178"></label>
+  <input type="radio"  class="radio"  id="radio-179" name="tab11" value="00003" onclick="ajax11_00003()"/>
+  <label for="radio-179"></label>
+  <input type="radio"  class="radio"  id="radio-180" name="tab11" value="00004" onclick="ajax11_00004()"/>
+  <label for="radio-180"></label>
+  <input type="radio"  class="radio"  id="radio-181" name="tab11" value="00005" onclick="ajax11_00005()"/>
+  <label for="radio-181"></label>
+  <input type="radio"  class="radio"  id="radio-182" name="tab11" value="00006" onclick="ajax11_00006()"/>
+  <label for="radio-182"></label>
+  <input type="radio"  class="radio"  id="radio-183" name="tab11" value="00007" onclick="ajax11_00007()"/>
+  <label for="radio-183"></label>
+  <input type="radio"  class="radio"  id="radio-184" name="tab11" value="00008" onclick="ajax11_00008()"/>
+  <label for="radio-184"></label>
+  <input type="radio"  class="radio"  id="radio-185" name="tab11" value="00009" onclick="ajax11_00009()"/>
+  <label for="radio-185"></label>
+  <input type="radio"  class="radio"  id="radio-186"name="tab11" value="000010"  onclick="ajax11_00010()"/>
+  <label for="radio-186"></label>
+  <input type="radio"  class="radio"  id="radio-187"name="tab11" value="000011"  onclick="ajax11_00011()"/>
+  <label for="radio-187"></label>
+  <input type="radio"  class="radio"  id="radio-188"name="tab11" value="000012"  onclick="ajax11_00012()"/>
+  <label for="radio-188"></label>
+  <input type="radio"  class="radio"  id="radio-189"name="tab11" value="000013"  onclick="ajax11_00013()"/>
+  <label for="radio-189"></label>
+  <input type="radio"  class="radio"  id="radio-190" name="tab11" value="000014"  onclick="ajax11_00014()"/>
+  <label for="radio-190"></label>
+  <input type="radio"  class="radio"  id="radio-191" name="tab11" value="000015"  onclick="ajax11_00015()"/>
+  <label for="radio-191"></label>
+  <input type="radio"  class="radio"  id="radio-192" name="tab11" value="000016" onclick="ajax11_00016()" />
+  <label for="radio-192"></label>
+
+</div>
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH12 DE SALIDA
+**************************************************************************-->
+<div id="bCh12"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-193" name="tab12" value="00001" onclick="ajax12_00001()" />
+  <label for="radio-193"></label>
+  <input type="radio"  class="radio"  id="radio-194" name="tab12" value="00002" onclick="ajax12_00002()"/>
+  <label for="radio-194"></label>
+  <input type="radio"  class="radio"  id="radio-195" name="tab12" value="00003" onclick="ajax12_00003()"/>
+  <label for="radio-195"></label>
+  <input type="radio"  class="radio"  id="radio-196" name="tab12" value="00004" onclick="ajax12_00004()"/>
+  <label for="radio-196"></label>
+  <input type="radio"  class="radio"  id="radio-197" name="tab12" value="00005" onclick="ajax12_00005()"/>
+  <label for="radio-197"></label>
+  <input type="radio"  class="radio"  id="radio-198" name="tab12" value="00006" onclick="ajax12_00006()"/>
+  <label for="radio-198"></label>
+  <input type="radio"  class="radio"  id="radio-199" name="tab12" value="00007" onclick="ajax12_00007()"/>
+  <label for="radio-199"></label>
+  <input type="radio"  class="radio"  id="radio-200" name="tab12" value="00008" onclick="ajax12_00008()"/>
+  <label for="radio-200"></label>
+  <input type="radio"  class="radio"  id="radio-201" name="tab12" value="00009" onclick="ajax12_00009()"/>
+  <label for="radio-201"></label>
+  <input type="radio"  class="radio"  id="radio-202"name="tab12" value="000010"  onclick="ajax12_00010()"/>
+  <label for="radio-202"></label>
+  <input type="radio"  class="radio"  id="radio-203"name="tab12" value="000011"  onclick="ajax12_00011()"/>
+  <label for="radio-203"></label>
+  <input type="radio"  class="radio"  id="radio-204"name="tab12" value="000012"  onclick="ajax12_00012()"/>
+  <label for="radio-204"></label>
+  <input type="radio"  class="radio"  id="radio-205"name="tab12" value="000013"  onclick="ajax12_00013()"/>
+  <label for="radio-205"></label>
+  <input type="radio"  class="radio"  id="radio-206"name="tab12" value="000014"  onclick="ajax12_00014()"/>
+  <label for="radio-206"></label>
+  <input type="radio"  class="radio"  id="radio-207" name="tab12" value="000015"  onclick="ajax12_00015()"/>
+  <label for="radio-207"></label>
+  <input type="radio"  class="radio"  id="radio-208" name="tab12" value="000016"  onclick="ajax12_00016()"/>
+  <label for="radio-208"></label>
+
+</div> 
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH13 DE SALIDA
+**************************************************************************-->
+<div id="bCh13"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-209" name="tab13" value="00001"  onclick="ajax13_00001()"/>
+  <label for="radio-209"></label>
+  <input type="radio"  class="radio"  id="radio-210" name="tab13" value="00002" onclick="ajax13_00002()"/>
+  <label for="radio-210"></label>
+  <input type="radio"  class="radio"  id="radio-211" name="tab13" value="00003" onclick="ajax13_00003()"/>
+  <label for="radio-211"></label>
+  <input type="radio"  class="radio"  id="radio-212" name="tab13" value="00004" onclick="ajax13_00004()"/>
+  <label for="radio-212"></label>
+  <input type="radio"  class="radio"  id="radio-213" name="tab13" value="00005" onclick="ajax13_00005()"/>
+  <label for="radio-213"></label>
+  <input type="radio"  class="radio"  id="radio-214" name="tab13" value="00006" onclick="ajax13_00006()"/>
+  <label for="radio-214"></label>
+  <input type="radio"  class="radio"  id="radio-215" name="tab13" value="00007" onclick="ajax13_00007()"/>
+  <label for="radio-215"></label>
+  <input type="radio"  class="radio"  id="radio-216" name="tab13" value="00008" onclick="ajax13_00008()"/>
+  <label for="radio-216"></label>
+  <input type="radio"  class="radio"  id="radio-217" name="tab13" value="00009" onclick="ajax13_00009()"/>
+  <label for="radio-217"></label>
+  <input type="radio"  class="radio"  id="radio-218"name="tab13" value="000010"  onclick="ajax13_00010()"/>
+  <label for="radio-218"></label>
+  <input type="radio"  class="radio"  id="radio-219"name="tab13" value="000011"  onclick="ajax13_00011()"/>
+  <label for="radio-219"></label>
+  <input type="radio"  class="radio"  id="radio-220"name="tab13" value="000012"  onclick="ajax13_00012()"/>
+  <label for="radio-220"></label>
+  <input type="radio"  class="radio"  id="radio-221"name="tab13" value="000013"  onclick="ajax13_00013()"/>
+  <label for="radio-221"></label>
+  <input type="radio"  class="radio"  id="radio-222"name="tab13" value="000014"  onclick="ajax13_00014()"/>
+  <label for="radio-222"></label>
+  <input type="radio"  class="radio"  id="radio-223" name="tab13" value="000015"  onclick="ajax13_00015()"/>
+  <label for="radio-223"></label>
+  <input type="radio"  class="radio"  id="radio-224" name="tab13" value="000016"  onclick="ajax13_00016()"/>
+  <label for="radio-224"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH14 DE SALIDA
+**************************************************************************-->
+<div id="bCh14"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-225" name="tab14" value="00001" onclick="ajax14_00001()" />
+  <label for="radio-225"></label>
+  <input type="radio"  class="radio"  id="radio-226" name="tab14" value="00002" onclick="ajax14_00002()"/>
+  <label for="radio-226"></label>
+  <input type="radio"  class="radio"  id="radio-227" name="tab14" value="00003" onclick="ajax14_00003()"/>
+  <label for="radio-227"></label>
+  <input type="radio"  class="radio"  id="radio-228" name="tab14" value="00004" onclick="ajax14_00004()"/>
+  <label for="radio-228"></label>
+  <input type="radio"  class="radio"  id="radio-229" name="tab14" value="00005" onclick="ajax14_00005()"/>
+  <label for="radio-229"></label>
+  <input type="radio"  class="radio"  id="radio-230" name="tab14" value="00006" onclick="ajax14_00006()"/>
+  <label for="radio-230"></label>
+  <input type="radio"  class="radio"  id="radio-231" name="tab14" value="00007" onclick="ajax14_00007()"/>
+  <label for="radio-231"></label>
+  <input type="radio"  class="radio"  id="radio-232" name="tab14" value="00008" onclick="ajax14_00008()"/>
+  <label for="radio-232"></label>
+  <input type="radio"  class="radio"  id="radio-233" name="tab14" value="00009" onclick="ajax14_00009()"/>
+  <label for="radio-233"></label>
+  <input type="radio"  class="radio"  id="radio-234"name="tab14" value="000010"  onclick="ajax14_00010()"/>
+  <label for="radio-234"></label>
+  <input type="radio"  class="radio"  id="radio-235"name="tab14" value="000011"  onclick="ajax14_00011()"/>
+  <label for="radio-235"></label>
+  <input type="radio"  class="radio"  id="radio-236"name="tab14" value="000012"  onclick="ajax14_00012()"/>
+  <label for="radio-236"></label>
+  <input type="radio"  class="radio"  id="radio-237"name="tab14" value="000013"  onclick="ajax14_00013()"/>
+  <label for="radio-237"></label>
+  <input type="radio"  class="radio"  id="radio-238"name="tab14" value="000014"  onclick="ajax14_00014()"/>
+  <label for="radio-238"></label>
+  <input type="radio"  class="radio"  id="radio-239" name="tab14" value="000015"  onclick="ajax14_00015()"/>
+  <label for="radio-239"></label>
+  <input type="radio"  class="radio"  id="radio-240" name="tab14" value="000016"  onclick="ajax14_00016()"/>
+  <label for="radio-240"></label>
+
+</div>
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH15 DE SALIDA
+**************************************************************************-->
+<div id="bCh15"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-241" name="tab15" value="00001"  onclick="ajax15_00001()"/>
+  <label for="radio-241"></label>
+  <input type="radio"  class="radio"  id="radio-242" name="tab15" value="00002" onclick="ajax15_00002()"/>
+  <label for="radio-242"></label>
+  <input type="radio"  class="radio"  id="radio-243" name="tab15" value="00003" onclick="ajax15_00003()"/>
+  <label for="radio-243"></label>
+  <input type="radio"  class="radio"  id="radio-244" name="tab15" value="00004" onclick="ajax15_00004()"/>
+  <label for="radio-244"></label>
+  <input type="radio"  class="radio"  id="radio-245" name="tab15" value="00005" onclick="ajax15_00005()"/>
+  <label for="radio-245"></label>
+  <input type="radio"  class="radio"  id="radio-246" name="tab15" value="00006" onclick="ajax15_00006()"/>
+  <label for="radio-246"></label>
+  <input type="radio"  class="radio"  id="radio-247" name="tab15" value="00007" onclick="ajax15_00007()"/>
+  <label for="radio-247"></label>
+  <input type="radio"  class="radio"  id="radio-248" name="tab15" value="00008" onclick="ajax15_00008()"/>
+  <label for="radio-248"></label>
+  <input type="radio"  class="radio"  id="radio-249" name="tab15" value="00009" onclick="ajax15_00009()"/>
+  <label for="radio-249"></label>
+  <input type="radio"  class="radio"  id="radio-250"name="tab15" value="000010"  onclick="ajax15_00010()"/>
+  <label for="radio-250"></label>
+  <input type="radio"  class="radio"  id="radio-251"name="tab15" value="000011"  onclick="ajax15_00011()"/>
+  <label for="radio-251"></label>
+  <input type="radio"  class="radio"  id="radio-252"name="tab15" value="000012"  onclick="ajax15_00012()"/>
+  <label for="radio-252"></label>
+  <input type="radio"  class="radio"  id="radio-253"name="tab15" value="000013"  onclick="ajax15_00013()"/>
+  <label for="radio-253"></label>
+  <input type="radio"  class="radio"  id="radio-254"name="tab15" value="000014"  onclick="ajax15_00014()"/>
+  <label for="radio-254"></label>
+  <input type="radio"  class="radio"  id="radio-255" name="tab15" value="000015"  onclick="ajax15_00015()"/>
+  <label for="radio-255"></label>
+  <input type="radio"  class="radio"  id="radio-256" name="tab15" value="000016"  onclick="ajax15_00016()"/>
+  <label for="radio-256"></label>
+
+</div> 
+
+
+<!-- ************************************************************************
+                 CANALES DE ENTRADA PARA CH16 DE SALIDA
+**************************************************************************-->
+<div id="bCh16"  style="display: none;">
+
+  <div style="color:red" class="ch1">CH1 </div>
+  <div style="color:red" class="ch2">CH2 </div>
+  <div style="color:red" class="ch3">CH3 </div>
+  <div style="color:red" class="ch4">CH4 </div>
+  <div style="color:red" class="ch5">CH5 </div>
+  <div style="color:red" class="ch6">CH6 </div>
+  <div style="color:red" class="ch7">CH7 </div>
+  <div style="color:red" class="ch8">CH8 </div>
+  <div style="color:red" class="ch9">CH9</div>
+  <div style="color:red" class="ch10">CH10 </div>
+  <div style="color:red" class="ch11">CH11</div>
+  <div style="color:red" class="ch12">CH12</div>
+  <div style="color:red" class="ch13">CH13 </div>
+  <div style="color:red" class="ch14">CH14</div>
+  <div style="color:red" class="ch15">CH15 </div>
+  <div style="color:red" class="ch16">CH16 </div>
+
+  <input type="radio"  class="radio"  id="radio-257" name="tab16" value="00001"  onclick="ajax16_00001()"/>
+  <label for="radio-257"></label>
+  <input type="radio"  class="radio"  id="radio-258" name="tab16" value="00002" onclick="ajax16_00002()"/>
+  <label for="radio-258"></label>
+  <input type="radio"  class="radio"  id="radio-259" name="tab16" value="00003" onclick="ajax16_00003()"/>
+  <label for="radio-259"></label>
+  <input type="radio"  class="radio"  id="radio-260" name="tab16" value="00004" onclick="ajax16_00004()"/>
+  <label for="radio-260"></label>
+  <input type="radio"  class="radio"  id="radio-261" name="tab16" value="00005" onclick="ajax16_00005()"/>
+  <label for="radio-261"></label>
+  <input type="radio"  class="radio"  id="radio-262" name="tab16" value="00006" onclick="ajax16_00006()"/>
+  <label for="radio-262"></label>
+  <input type="radio"  class="radio"  id="radio-263" name="tab16" value="00007" onclick="ajax16_00007()"/>
+  <label for="radio-263"></label>
+  <input type="radio"  class="radio"  id="radio-264" name="tab16" value="00008" onclick="ajax16_00008()"/>
+  <label for="radio-264"></label>
+  <input type="radio"  class="radio"  id="radio-265" name="tab16" value="00009" onclick="ajax16_00009()"/>
+  <label for="radio-265"></label>
+  <input type="radio"  class="radio"  id="radio-266"name="tab16" value="000010"  onclick="ajax16_00010()"/>
+  <label for="radio-266"></label>
+  <input type="radio"  class="radio"  id="radio-267"name="tab16" value="000011"  onclick="ajax16_00011()"/>
+  <label for="radio-267"></label>
+  <input type="radio"  class="radio"  id="radio-268"name="tab16" value="000012"  onclick="ajax16_00012()"/>
+  <label for="radio-268"></label>
+  <input type="radio"  class="radio"  id="radio-269"name="tab16" value="000013"  onclick="ajax16_00013()"/>
+  <label for="radio-269"></label>
+  <input type="radio"  class="radio"  id="radio-270"name="tab16" value="000014"  onclick="ajax16_00014()"/>
+  <label for="radio-270"></label>
+  <input type="radio"  class="radio"  id="radio-271" name="tab16" value="000015"  onclick="ajax16_00015()"/>
+  <label for="radio-271"></label>
+  <input type="radio"  class="radio"  id="radio-272" name="tab16" value="000016"  onclick="ajax16_00016()"/>
+  <label for="radio-272"></label>
+
+</div>
+
+
+<!-- **********************************************************************************************
+    SCRIPTS PARA APARECER Y DESAPARECER LOS CANALES DE ENTRADA OPRIMIENDO SALIDA CORRESPONDIENTE
+    
+************************************************************************************************-->
+<script type="text/javascript">
+
+$('#radio-17').on("click", function() {
+
+});
+
+
+function F1() {
+  var x1 = document.getElementById("bCh1");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+  // else {
+  //   x.style.display = "none";
+  // }
+
+}
+
+function F2() {
+  var x1 = document.getElementById("bCh2");
+  var x2 = document.getElementById("bCh1");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+
+function F3() {
+  var x1 = document.getElementById("bCh3");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh1");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F4() {
+  var x1 = document.getElementById("bCh4");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh1");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F5() {
+  var x1 = document.getElementById("bCh5");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh1");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F6() {
+  var x1 = document.getElementById("bCh6");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh1");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F7() {
+  var x1 = document.getElementById("bCh7");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh1");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F8() {
+  var x1 = document.getElementById("bCh8");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh1");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F9() {
+  var x1 = document.getElementById("bCh9");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh1");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+
+
+}
+
+function F10() {
+  var x1 = document.getElementById("bCh10");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh1");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+
+ 
+}
+
+
+function F11() {
+  var x1 = document.getElementById("bCh11");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh1");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F12() {
+  var x1 = document.getElementById("bCh12");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh1");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F13() {
+  var x1 = document.getElementById("bCh13");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh1");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F14() {
+  var x1 = document.getElementById("bCh14");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh1");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F15() {
+  var x1 = document.getElementById("bCh15");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh1");
+  var x16 = document.getElementById("bCh16");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+function F16() {
+  var x1 = document.getElementById("bCh16");
+  var x2 = document.getElementById("bCh2");
+  var x3 = document.getElementById("bCh3");
+  var x4 = document.getElementById("bCh4");
+  var x5 = document.getElementById("bCh5");
+  var x6 = document.getElementById("bCh6");
+  var x7 = document.getElementById("bCh7");
+  var x8 = document.getElementById("bCh8");
+  var x9 = document.getElementById("bCh9");
+  var x10 = document.getElementById("bCh10");
+  var x11 = document.getElementById("bCh11");
+  var x12 = document.getElementById("bCh12");
+  var x13 = document.getElementById("bCh13");
+  var x14 = document.getElementById("bCh14");
+  var x15 = document.getElementById("bCh15");
+  var x16 = document.getElementById("bCh1");
+  if (x1.style.display === "none") {
+    x1.style.display = "block";
+    x2.style.display = "none";
+    x3.style.display = "none";
+    x4.style.display = "none";
+    x5.style.display = "none";
+    x6.style.display = "none";
+    x7.style.display = "none";
+    x8.style.display = "none";
+    x9.style.display = "none";
+    x10.style.display = "none";
+    x11.style.display = "none";
+    x12.style.display = "none";
+    x13.style.display = "none";
+    x14.style.display = "none";
+    x15.style.display = "none";
+    x16.style.display = "none";
+  
+  } 
+}
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+function ajax1_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00001", true);
+xhttp.send();
+}
+
+function ajax1_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00002", true);
+xhttp.send();
+}
+function ajax1_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00003", true);
+xhttp.send();
+}
+
+function ajax1_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00004", true);
+xhttp.send();
+}
+function ajax1_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00005", true);
+xhttp.send();
+}
+function ajax1_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00006", true);
+xhttp.send();
+}
+function ajax1_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00007", true);
+xhttp.send();
+}
+
+function ajax1_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00008", true);
+xhttp.send();
+}
+function ajax1_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00009", true);
+xhttp.send();
+}
+
+function ajax1_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00010", true);
+xhttp.send();
+}
+function ajax1_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00011", true);
+xhttp.send();
+}
+function ajax1_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00012", true);
+xhttp.send();
+}
+function ajax1_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00013", true);
+xhttp.send();
+}
+
+function ajax1_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00014", true);
+xhttp.send();
+}
+function ajax1_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00015", true);
+xhttp.send();
+}
+function ajax1_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00001&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax2_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00001", true);
+xhttp.send();
+}
+
+function ajax2_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00002", true);
+xhttp.send();
+}
+function ajax2_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00003", true);
+xhttp.send();
+}
+
+function ajax2_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00004", true);
+xhttp.send();
+}
+function ajax2_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00005", true);
+xhttp.send();
+}
+function ajax2_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00006", true);
+xhttp.send();
+}
+function ajax2_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00007", true);
+xhttp.send();
+}
+
+function ajax2_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00008", true);
+xhttp.send();
+}
+function ajax2_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00009", true);
+xhttp.send();
+}
+
+function ajax2_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00010", true);
+xhttp.send();
+}
+function ajax2_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00011", true);
+xhttp.send();
+}
+function ajax2_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00012", true);
+xhttp.send();
+}
+function ajax2_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00013", true);
+xhttp.send();
+}
+
+function ajax2_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00014", true);
+xhttp.send();
+}
+function ajax2_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00015", true);
+xhttp.send();
+}
+function ajax2_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00002&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+
+
+function ajax3_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00001", true);
+xhttp.send();
+}
+
+function ajax3_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00002", true);
+xhttp.send();
+}
+function ajax3_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00003", true);
+xhttp.send();
+}
+
+function ajax3_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00004", true);
+xhttp.send();
+}
+function ajax3_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00005", true);
+xhttp.send();
+}
+function ajax3_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00006", true);
+xhttp.send();
+}
+function ajax3_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00007", true);
+xhttp.send();
+}
+
+function ajax3_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00008", true);
+xhttp.send();
+}
+function ajax3_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00009", true);
+xhttp.send();
+}
+
+function ajax3_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00010", true);
+xhttp.send();
+}
+function ajax3_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00011", true);
+xhttp.send();
+}
+function ajax3_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00012", true);
+xhttp.send();
+}
+function ajax3_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00013", true);
+xhttp.send();
+}
+
+function ajax3_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00014", true);
+xhttp.send();
+}
+function ajax3_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00015", true);
+xhttp.send();
+}
+function ajax3_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00003&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax4_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00001", true);
+xhttp.send();
+}
+
+function ajax4_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00002", true);
+xhttp.send();
+}
+function ajax4_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00003", true);
+xhttp.send();
+}
+
+function ajax4_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00004", true);
+xhttp.send();
+}
+function ajax4_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00005", true);
+xhttp.send();
+}
+function ajax4_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00006", true);
+xhttp.send();
+}
+function ajax4_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00007", true);
+xhttp.send();
+}
+
+function ajax4_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00008", true);
+xhttp.send();
+}
+function ajax4_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00009", true);
+xhttp.send();
+}
+
+function ajax4_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00010", true);
+xhttp.send();
+}
+function ajax4_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00011", true);
+xhttp.send();
+}
+function ajax4_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00012", true);
+xhttp.send();
+}
+function ajax4_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00013", true);
+xhttp.send();
+}
+
+function ajax4_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00014", true);
+xhttp.send();
+}
+function ajax4_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00015", true);
+xhttp.send();
+}
+function ajax4_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00004&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax5_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00001", true);
+xhttp.send();
+}
+
+function ajax5_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00002", true);
+xhttp.send();
+}
+function ajax5_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00003", true);
+xhttp.send();
+}
+
+function ajax5_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00004", true);
+xhttp.send();
+}
+function ajax5_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00005", true);
+xhttp.send();
+}
+function ajax5_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00006", true);
+xhttp.send();
+}
+function ajax5_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00007", true);
+xhttp.send();
+}
+
+function ajax5_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00008", true);
+xhttp.send();
+}
+function ajax5_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00009", true);
+xhttp.send();
+}
+
+function ajax5_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00010", true);
+xhttp.send();
+}
+function ajax5_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00011", true);
+xhttp.send();
+}
+function ajax5_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00012", true);
+xhttp.send();
+}
+function ajax5_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00013", true);
+xhttp.send();
+}
+
+function ajax5_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00014", true);
+xhttp.send();
+}
+function ajax5_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00015", true);
+xhttp.send();
+}
+function ajax5_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00005&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax6_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00001", true);
+xhttp.send();
+}
+
+function ajax6_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00002", true);
+xhttp.send();
+}
+function ajax6_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00003", true);
+xhttp.send();
+}
+
+function ajax6_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00004", true);
+xhttp.send();
+}
+function ajax6_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00005", true);
+xhttp.send();
+}
+function ajax6_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00006", true);
+xhttp.send();
+}
+function ajax6_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00007", true);
+xhttp.send();
+}
+
+function ajax6_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00008", true);
+xhttp.send();
+}
+function ajax6_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00009", true);
+xhttp.send();
+}
+
+function ajax6_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00010", true);
+xhttp.send();
+}
+function ajax6_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00011", true);
+xhttp.send();
+}
+function ajax6_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00012", true);
+xhttp.send();
+}
+function ajax6_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00013", true);
+xhttp.send();
+}
+
+function ajax6_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00014", true);
+xhttp.send();
+}
+function ajax6_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00015", true);
+xhttp.send();
+}
+function ajax6_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00006&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax7_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00001", true);
+xhttp.send();
+}
+
+function ajax7_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00002", true);
+xhttp.send();
+}
+function ajax7_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00003", true);
+xhttp.send();
+}
+
+function ajax7_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00004", true);
+xhttp.send();
+}
+function ajax7_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00005", true);
+xhttp.send();
+}
+function ajax7_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00006", true);
+xhttp.send();
+}
+function ajax7_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00007", true);
+xhttp.send();
+}
+
+function ajax7_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00008", true);
+xhttp.send();
+}
+function ajax7_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00009", true);
+xhttp.send();
+}
+
+function ajax7_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00010", true);
+xhttp.send();
+}
+function ajax7_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00011", true);
+xhttp.send();
+}
+function ajax7_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00012", true);
+xhttp.send();
+}
+function ajax7_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00013", true);
+xhttp.send();
+}
+
+function ajax7_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00014", true);
+xhttp.send();
+}
+function ajax7_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00015", true);
+xhttp.send();
+}
+function ajax7_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00007&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax8_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00001", true);
+xhttp.send();
+}
+
+function ajax8_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00002", true);
+xhttp.send();
+}
+function ajax8_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00003", true);
+xhttp.send();
+}
+
+function ajax8_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00004", true);
+xhttp.send();
+}
+function ajax8_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00005", true);
+xhttp.send();
+}
+function ajax8_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00006", true);
+xhttp.send();
+}
+function ajax8_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00007", true);
+xhttp.send();
+}
+
+function ajax8_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00008", true);
+xhttp.send();
+}
+function ajax8_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00009", true);
+xhttp.send();
+}
+
+function ajax8_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00010", true);
+xhttp.send();
+}
+function ajax8_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00011", true);
+xhttp.send();
+}
+function ajax8_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00012", true);
+xhttp.send();
+}
+function ajax8_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00013", true);
+xhttp.send();
+}
+
+function ajax8_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00014", true);
+xhttp.send();
+}
+function ajax8_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00015", true);
+xhttp.send();
+}
+function ajax8_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00008&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax9_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00001", true);
+xhttp.send();
+}
+
+function ajax9_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00002", true);
+xhttp.send();
+}
+function ajax9_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00003", true);
+xhttp.send();
+}
+
+function ajax9_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00004", true);
+xhttp.send();
+}
+function ajax9_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00005", true);
+xhttp.send();
+}
+function ajax9_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00006", true);
+xhttp.send();
+}
+function ajax9_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00007", true);
+xhttp.send();
+}
+
+function ajax9_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00008", true);
+xhttp.send();
+}
+function ajax9_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00009", true);
+xhttp.send();
+}
+
+function ajax9_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00010", true);
+xhttp.send();
+}
+function ajax9_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00011", true);
+xhttp.send();
+}
+function ajax9_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00012", true);
+xhttp.send();
+}
+function ajax9_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00013", true);
+xhttp.send();
+}
+
+function ajax9_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00014", true);
+xhttp.send();
+}
+function ajax9_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00015", true);
+xhttp.send();
+}
+function ajax9_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00009&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+function ajax10_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00001", true);
+xhttp.send();
+}
+
+function ajax10_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00002", true);
+xhttp.send();
+}
+function ajax10_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00003", true);
+xhttp.send();
+}
+
+function ajax10_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00004", true);
+xhttp.send();
+}
+function ajax10_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00005", true);
+xhttp.send();
+}
+function ajax10_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00006", true);
+xhttp.send();
+}
+function ajax10_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00007", true);
+xhttp.send();
+}
+
+function ajax10_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00008", true);
+xhttp.send();
+}
+function ajax10_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00009", true);
+xhttp.send();
+}
+
+function ajax10_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00010", true);
+xhttp.send();
+}
+function ajax10_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00011", true);
+xhttp.send();
+}
+function ajax10_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00012", true);
+xhttp.send();
+}
+function ajax10_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00013", true);
+xhttp.send();
+}
+
+function ajax10_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00014", true);
+xhttp.send();
+}
+function ajax10_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00015", true);
+xhttp.send();
+}
+function ajax10_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00010&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+function ajax11_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00001", true);
+xhttp.send();
+}
+
+function ajax11_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00002", true);
+xhttp.send();
+}
+function ajax11_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00003", true);
+xhttp.send();
+}
+
+function ajax11_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00004", true);
+xhttp.send();
+}
+function ajax11_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00005", true);
+xhttp.send();
+}
+function ajax11_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00006", true);
+xhttp.send();
+}
+function ajax11_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00007", true);
+xhttp.send();
+}
+
+function ajax11_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00008", true);
+xhttp.send();
+}
+function ajax11_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00009", true);
+xhttp.send();
+}
+
+function ajax11_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00010", true);
+xhttp.send();
+}
+function ajax11_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00011", true);
+xhttp.send();
+}
+function ajax11_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00012", true);
+xhttp.send();
+}
+function ajax11_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00013", true);
+xhttp.send();
+}
+
+function ajax11_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00014", true);
+xhttp.send();
+}
+function ajax11_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00015", true);
+xhttp.send();
+}
+function ajax11_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00011&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+function ajax12_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00001", true);
+xhttp.send();
+}
+
+function ajax12_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00002", true);
+xhttp.send();
+}
+function ajax12_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00003", true);
+xhttp.send();
+}
+
+function ajax12_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00004", true);
+xhttp.send();
+}
+function ajax12_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00005", true);
+xhttp.send();
+}
+function ajax12_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00006", true);
+xhttp.send();
+}
+function ajax12_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00007", true);
+xhttp.send();
+}
+
+function ajax12_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00008", true);
+xhttp.send();
+}
+function ajax12_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00009", true);
+xhttp.send();
+}
+
+function ajax12_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00010", true);
+xhttp.send();
+}
+function ajax12_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00011", true);
+xhttp.send();
+}
+function ajax12_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00012", true);
+xhttp.send();
+}
+function ajax12_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00013", true);
+xhttp.send();
+}
+
+function ajax12_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00014", true);
+xhttp.send();
+}
+function ajax12_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00015", true);
+xhttp.send();
+}
+function ajax12_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00012&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+function ajax13_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00001", true);
+xhttp.send();
+}
+
+function ajax13_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00002", true);
+xhttp.send();
+}
+function ajax13_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00003", true);
+xhttp.send();
+}
+
+function ajax13_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00004", true);
+xhttp.send();
+}
+function ajax13_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00005", true);
+xhttp.send();
+}
+function ajax13_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00006", true);
+xhttp.send();
+}
+function ajax13_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00007", true);
+xhttp.send();
+}
+
+function ajax13_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00008", true);
+xhttp.send();
+}
+function ajax13_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00009", true);
+xhttp.send();
+}
+
+function ajax13_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00010", true);
+xhttp.send();
+}
+function ajax13_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00011", true);
+xhttp.send();
+}
+function ajax13_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00012", true);
+xhttp.send();
+}
+function ajax13_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00013", true);
+xhttp.send();
+}
+
+function ajax13_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00014", true);
+xhttp.send();
+}
+function ajax13_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00015", true);
+xhttp.send();
+}
+function ajax13_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00013&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+function ajax14_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00001", true);
+xhttp.send();
+}
+
+function ajax14_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00002", true);
+xhttp.send();
+}
+function ajax14_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00003", true);
+xhttp.send();
+}
+
+function ajax14_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00004", true);
+xhttp.send();
+}
+function ajax14_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00005", true);
+xhttp.send();
+}
+function ajax14_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00006", true);
+xhttp.send();
+}
+function ajax14_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00007", true);
+xhttp.send();
+}
+
+function ajax14_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00008", true);
+xhttp.send();
+}
+function ajax14_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00009", true);
+xhttp.send();
+}
+
+function ajax14_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00010", true);
+xhttp.send();
+}
+function ajax14_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00011", true);
+xhttp.send();
+}
+function ajax14_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00012", true);
+xhttp.send();
+}
+function ajax14_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00013", true);
+xhttp.send();
+}
+
+function ajax14_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00014", true);
+xhttp.send();
+}
+function ajax14_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00015", true);
+xhttp.send();
+}
+function ajax14_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00014&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+function ajax15_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00001", true);
+xhttp.send();
+}
+
+function ajax15_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00002", true);
+xhttp.send();
+}
+function ajax15_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00003", true);
+xhttp.send();
+}
+
+function ajax15_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00004", true);
+xhttp.send();
+}
+function ajax15_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00005", true);
+xhttp.send();
+}
+function ajax15_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00006", true);
+xhttp.send();
+}
+function ajax15_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00007", true);
+xhttp.send();
+}
+
+function ajax15_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00008", true);
+xhttp.send();
+}
+function ajax15_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00009", true);
+xhttp.send();
+}
+
+function ajax15_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00010", true);
+xhttp.send();
+}
+function ajax15_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00011", true);
+xhttp.send();
+}
+function ajax15_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00012", true);
+xhttp.send();
+}
+function ajax15_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00013", true);
+xhttp.send();
+}
+
+function ajax15_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00014", true);
+xhttp.send();
+}
+function ajax15_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00015", true);
+xhttp.send();
+}
+function ajax15_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00015&in=00016", true);
+xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+function ajax16_00001() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00001", true);
+xhttp.send();
+}
+
+function ajax16_00002() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00002", true);
+xhttp.send();
+}
+function ajax16_00003() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00003", true);
+xhttp.send();
+}
+
+function ajax16_00004() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00004", true);
+xhttp.send();
+}
+function ajax16_00005() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00005", true);
+xhttp.send();
+}
+function ajax16_00006() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00006", true);
+xhttp.send();
+}
+function ajax16_00007() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00007", true);
+xhttp.send();
+}
+
+function ajax16_00008() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00008", true);
+xhttp.send();
+}
+function ajax16_00009() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00009", true);
+xhttp.send();
+}
+
+function ajax16_00010() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00010", true);
+xhttp.send();
+}
+function ajax16_00011() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00011", true);
+xhttp.send();
+}
+function ajax16_00012() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00012", true);
+xhttp.send();
+}
+function ajax16_00013() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00013", true);
+xhttp.send();
+}
+
+function ajax16_00014() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00014", true);
+xhttp.send();
+}
+function ajax16_00015() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00015", true);
+xhttp.send();
+}
+function ajax16_00016() {
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+   var response = this.responseText;  
+  }
+  
+};
+xhttp.open("POST", "telnet.php?out=00016&in=00016", true);
+xhttp.send();
+}
+
+</script>
+
+</body>
+</html>
